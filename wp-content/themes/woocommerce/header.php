@@ -35,6 +35,7 @@
 				<div class="custom-search">
 					<?php get_search_form(); ?>
 				</div>
+				<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav');endif; ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'woocommerce'); ?></button>
 				<?php
 				wp_nav_menu(

@@ -10,3 +10,15 @@ function custom_theme_menus() {
   ) );
 }
 add_action( 'after_setup_theme', 'custom_theme_menus' );
+
+
+/*widget nav*/
+function zona_widget(){
+    register_sidebar(
+    array('name'=>'imagen nav', 'id'=>'img_nav',// le damos nombre e id al footer
+          'before_widget'=>'<div id="%1$s" class="">', // añadimos clase e id 
+          'after_widget'=>'</div>',// cerramos el div
+    )
+    );
+  }
+  add_action('widgets_init','zona_widget');

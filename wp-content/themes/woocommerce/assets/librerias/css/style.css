@@ -46,6 +46,8 @@
     padding: 4px;
     margin: -4px;
     height: 36px;
+    display: flex;
+    align-items: flex-end;
 }
 #primary-menu li a{
     color: #33333399;
@@ -58,6 +60,11 @@
 }
 .menu-nav2-container{
     grid-area: nav-right-bottom;
+    display: flex;
+    align-items: flex-end;
 }
-
+#primary-menu li a:hover{
+    color: #000;
+    
+}
 /*nav*/
