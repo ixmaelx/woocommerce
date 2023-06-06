@@ -41,6 +41,12 @@
 .search-form label{
     width: 100%;
 }
+.disney-nav{
+    grid-area: nav-right-top;
+    display: flex;
+    justify-content: end;
+}
+
 .menu-nav1-container{
     grid-area: nav-center-bottom;
     padding: 4px;
@@ -56,7 +62,7 @@
 .menu li a{
     color: #333333;
     font-size: 14px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .menu-nav2-container{
     grid-area: nav-right-bottom;
@@ -67,4 +73,37 @@
     color: #000;
     
 }
+.sub-menu{
+    background-color: #333333;
+    flex-direction: column;
+    padding: 10px!important;
+}
+.sub-menu li a{
+    color: #fff!important;
+}
 /*nav*/
+
+/*main*/
+.site-main{
+background-color: #EBEBEB;
+}
+.rectangulo-pagos{
+    background-color: #fff;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    border-radius:5px ;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    border-left: 4px solid #3483FA;
+}
+.pagos{
+    list-style: none;
+}
+
+
+
+/*main*/

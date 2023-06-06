@@ -1,0 +1,51 @@
+2023-06-06T03:57:54+00:00 CRITICAL Uncaught Error: Call to undefined function register_carrusel() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\assets\inc\widgets-functions.php:33
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): widget_carrusel('')
+#1 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\sitios git\woocommerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\sitios git\woocommerce\wp-includes\widgets.php(1854): do_action('widgets_init')
+#4 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): wp_widgets_init('')
+#5 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\sitios git\woocommerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\sitios git\woocommerce\wp-settings.php(623): do_action('init')
+#8 C:\sitios git\woocommerce\wp-config.php(96): require_once('C:\\sitios git\\w...')
+#9 C:\sitios git\woocommerce\wp-load.php(50): require_once('C:\\sitios git\\w...')
+#10 C:\sitios git\woocommerce\wp-blog-header.php(13): require_once('C:\\sitios git\\w...')
+#11 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#12 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\assets\inc\widgets-functions.php en la línea 33
+
+2023-06-06T03:58:30+00:00 CRITICAL Uncaught Error: Call to undefined function register_carrusel() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\assets\inc\widgets-functions.php:33
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): widget_carrusel('')
+#1 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\sitios git\woocommerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\sitios git\woocommerce\wp-includes\widgets.php(1854): do_action('widgets_init')
+#4 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): wp_widgets_init('')
+#5 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\sitios git\woocommerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\sitios git\woocommerce\wp-settings.php(623): do_action('init')
+#8 C:\sitios git\woocommerce\wp-config.php(96): require_once('C:\\sitios git\\w...')
+#9 C:\sitios git\woocommerce\wp-load.php(50): require_once('C:\\sitios git\\w...')
+#10 C:\sitios git\woocommerce\wp-blog-header.php(13): require_once('C:\\sitios git\\w...')
+#11 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#12 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\assets\inc\widgets-functions.php en la línea 33
+
+2023-06-06T03:58:32+00:00 CRITICAL Uncaught Error: Call to undefined function register_carrusel() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\assets\inc\widgets-functions.php:33
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): widget_carrusel('')
+#1 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\sitios git\woocommerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\sitios git\woocommerce\wp-includes\widgets.php(1854): do_action('widgets_init')
+#4 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): wp_widgets_init('')
+#5 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\sitios git\woocommerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\sitios git\woocommerce\wp-settings.php(623): do_action('init')
+#8 C:\sitios git\woocommerce\wp-config.php(96): require_once('C:\\sitios git\\w...')
+#9 C:\sitios git\woocommerce\wp-load.php(50): require_once('C:\\sitios git\\w...')
+#10 C:\sitios git\woocommerce\wp-blog-header.php(13): require_once('C:\\sitios git\\w...')
+#11 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#12 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\assets\inc\widgets-functions.php en la línea 33
+
