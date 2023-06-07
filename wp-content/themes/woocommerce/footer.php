@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,23 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'woocommerce' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'woocommerce' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'woocommerce' ), 'woocommerce', '<a href="http://underscores.me/">Pablo</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer container">
+	<div class="foot-abajo">
+		<ul class="info">
+			<li class="info-footer">Trabaja con nosotros</li>
+			<li class="info-footer">Terminos y condiciones</li>
+			<li class="info-footer">Como cuidamos tu privacidad</li>
+			<li class="info-footer">Accesibilidad</li>
+			<li class="info-footer">Ayuda</li>
+		</ul>
+		<p class="texto-foot">Copyright © 1999-2023 MercadoLibre Chile Ltda.</p>
+		<p class="texto-foot">Av. Apoquindo 4800, Torre 2, piso 21, Las Condes, Santiago - Chile.</p>
+	</div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
