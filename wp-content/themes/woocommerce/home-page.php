@@ -48,7 +48,7 @@ get_header();
 		<ul class="mt-5 rectangulo-pagos">
 			<li class="pagos">Paga comodo y seguro</li>
 			<li class="pagos"><i class="fa-brands fa-cc-visa me-3" style="color: #5697FA;"></i>Hasta 12 cuotas sin interés</li>
-			<li class="pagos"><i class="fa-regular fa-credit-card me-3" style="color: #5697FA;"></i>Targeta de debito</li>
+			<li class="pagos"><i class="fa-regular fa-credit-card me-3" style="color: #5697FA;"></i>Tarjeta de debito</li>
 			<li class="pagos"><i class="fa-solid fa-plus me-3" style="color: #5697FA;"></i>Más medio de pago</li>
 		</ul>
 
