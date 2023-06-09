@@ -106,9 +106,24 @@ background-color: #EBEBEB;
 .pagos{
     list-style: none;
 }
+.ico-pagos{
+    color: #5697FA;
+    border: 0.5px solid #d9d9d9;
+    border-radius: 100%;
+    padding: 12px;
+}
+
 .carousel-inner {
     max-width: 1600px;
     margin: auto;
+}
+.sec-beneficios{
+    background-color: #fff;
+}
+.cont-beneficios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 
@@ -178,22 +193,27 @@ background-color: #EBEBEB;
     background-color: #F7F7F7;
 }
 
-button:focus:not(:focus-visible) {
-    outline: 0; 
+.accordion-button{
+    font-size:13px ;
+    color: #666666;
 }
 .accordion-button:focus {
-    z-index: 3;
-    border-color: var(--bs-accordion-btn-focus-border-color);
     outline: 0;
     box-shadow: none;
-}
-.accordion-button:hover {
-    z-index: 2;
+    
 }
 .accordion-button:not(.collapsed) {
     color: #000;
     background-color: #F7F7F7;
     box-shadow: none;
+    color: #666666;
 }
-
+.accordion-button::after {
+    background-image: url(../../../../../uploads/2023/06/flecha.png);
+    margin-left: 10px;
+    
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../../../../../uploads/2023/06/flecha.png);
+}
 /*footer*/

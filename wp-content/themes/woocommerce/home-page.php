@@ -29,9 +29,9 @@ get_header();
 
 			<?php if (is_active_sidebar('carrusel_img1')) : dynamic_sidebar('carrusel_img1');
 			endif; ?>
-			<?php if (is_active_sidebar('carrusel_img1')) : dynamic_sidebar('carrusel_img2');
+			<?php if (is_active_sidebar('carrusel_img2')) : dynamic_sidebar('carrusel_img2');
 			endif; ?>
-			<?php if (is_active_sidebar('carrusel_img1')) : dynamic_sidebar('carrusel_img3');
+			<?php if (is_active_sidebar('carrusel_img3')) : dynamic_sidebar('carrusel_img3');
 			endif; ?>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -44,18 +44,37 @@ get_header();
 		</button>
 	</div>
 
-	<div class="container">
-		<ul class="mt-5 rectangulo-pagos">
-			<li class="pagos">Paga comodo y seguro</li>
-			<li class="pagos"><i class="fa-brands fa-cc-visa me-3" style="color: #5697FA;"></i>Hasta 12 cuotas sin interés</li>
-			<li class="pagos"><i class="fa-regular fa-credit-card me-3" style="color: #5697FA;"></i>Tarjeta de debito</li>
-			<li class="pagos"><i class="fa-solid fa-plus me-3" style="color: #5697FA;"></i>Más medio de pago</li>
-		</ul>
+	<section>
+		<div class="container">
+			<ul class="mt-5 rectangulo-pagos">
+				<li class="pagos">Paga comodo y seguro</li>
+				<li class="pagos"><i class="fa-brands fa-cc-visa me-3 ico-pagos" style="color: #5697FA;"></i>Hasta 12 cuotas sin interés</li>
+				<li class="pagos"><i class="fa-regular fa-credit-card me-3 ico-pagos" style="color: #5697FA;"></i>Tarjeta de debito</li>
+				<li class="pagos"><i class="fa-solid fa-plus me-3 ico-pagos" style="color: #5697FA;"></i>Más medio de pago</li>
+			</ul>
 
-		<h2 class="mt-5">nuevos productos</h2>
+		</div>
+	</section>
+	<h2 class="mt-5">nuevos productos</h2>
+	<section class="sec-beneficios">
+		<div class="container cont-beneficios">
+			<div>
+				<?php if (is_active_sidebar('beneficio_1')) : dynamic_sidebar('beneficio_1');
+				endif; ?>
+			</div>
+			<div>
+				<?php if (is_active_sidebar('beneficio_2')) : dynamic_sidebar('beneficio_2');
+				endif; ?>
+			</div>
+			<div>
+				<?php if (is_active_sidebar('beneficio_3')) : dynamic_sidebar('beneficio_3');
+				endif; ?>
+			</div>
+		</div>
+	</section>
 
 
-	</div>
+
 
 </main><!-- #main -->
 
