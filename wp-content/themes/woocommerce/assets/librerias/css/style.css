@@ -1,88 +1,82 @@
-*{
+*, ul{
     margin: 0px;
+}
+a:visited{
+    color: #000;
 }
 /*nav*/
 .site-header{
-    background-color: #FFF159;
+    background-color: #fff15b;
 }
-.main-navigation{
-    
-    display: grid;
-    grid-template-areas:
-        "nav-left-top nav-center-top nav-right-top"
-        "nav-left-bottom nav-center-bottom nav-right-bottom";
-    grid-template-columns: 162px minmax(340px, 580px) minmax(350px, 390px);
-    grid-template-rows: 40px 28px;
-    grid-column-gap: 24px;
-    row-gap: 12px;
-    grid-row-gap: 12px;
-    padding: 8px 10px 12px 10px;
-    height: 100%;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.navbar{
+    height: 100px;
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
-.custom-logo-link{
-    grid-area: nav-left-top;
-}
-.custom-search{
-    grid-area: nav-center-top;
+.logo{
+    width: 162px;
     height: 40px;
-    -webkit-align-items: center;
-    align-items: center;
 }
-.search-field{
-    width: 100%;
-    height: 100%;
-    border: 0px !important;
-}
-.search-form{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.search-form label{
-    width: 100%;
+.aws-container,.aws-search-form{
+    width: 580px;
+    height: 40px!important;
 }
 .disney-nav{
-    grid-area: nav-right-top;
-    display: flex;
-    justify-content: end;
+    width: 390px;
+    height: 40px;
 }
-
-.menu-nav1-container{
-    grid-area: nav-center-bottom;
-    padding: 4px;
-    margin: -4px;
-    height: 36px;
-    display: flex;
-    align-items: flex-end;
+.disney-nav img{
+    float: right;
 }
-#primary-menu li a{
-    color: #33333399;
-    font-size: 14px;
-}
-.menu li a{
-    color: #333333;
-    font-size: 14px;
-    margin-right: 10px;
-}
-.menu-nav2-container{
-    grid-area: nav-right-bottom;
+.ubicacion{
+    width:162px ;
+    height:40px ;
     display: flex;
     align-items: flex-end;
-}
-#primary-menu li a:hover{
-    color: #000;
     
 }
-.sub-menu{
-    background-color: #333333;
-    flex-direction: column;
-    padding: 10px!important;
+.ubicacion a span{
+    font-size: 14px;
+    color: #33333399;
+    text-decoration: none;
+
 }
-.sub-menu li a{
-    color: #fff!important;
+.ubicacion a{
+    text-decoration: none;
+}
+.nav-1{
+    width: 580px;
+    height: 40px;
+}
+.nav-2{
+    width: 390px;
+    height: 40px;
+    justify-content: flex-end;
+}
+.navbar-nav:first-child .nav-item:first-child .nav-link{
+    padding-left: 0px;
+}
+.nav-link{
+    padding-bottom: 0px;
+    font-size: 14px;
+    color: #33333399;
+}
+.nav-1, .nav-2{
+    align-items: flex-end;
+}
+.cont-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start!important ;
+    gap: 0px 24px;
+    height: 100px;
+    padding: 8px 10px 12px 10px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: end!important;
+    
 }
 /*nav*/
 
@@ -238,3 +232,26 @@ background-color: #EBEBEB;
     background-image: url(../../../../../uploads/2023/06/flecha.png);
 }
 /*footer*/
+
+@media (max-width: 1200px) {
+    .aws-container,.aws-search-form{
+        width: 380px;
+    }
+    .nav-1{
+        width: 380px;
+        height: 40px;
+    }
+    
+}
+@media (max-width: 991px) {
+    .disney-nav{
+        display: none;
+    }
+    .ubicacion{
+      display: none;
+    }
+    .navbar,.cont-nav{
+        height: 60px;
+    }
+    
+}

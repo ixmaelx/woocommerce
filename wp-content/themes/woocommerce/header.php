@@ -29,47 +29,37 @@
 
 		<header id="masthead" class="site-header">
 
-			<nav id="site-navigation" class="main-navigation d-none">
-
-				<?php the_custom_logo(); ?>
-				<div class="custom-search">
-					<?php get_search_form(); ?>
-				</div>
-				<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav');
-				endif; ?>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
-				<?php
-				wp_nav_menu(array(
-					'theme_location' => 'secondary-menu',
-					'menu_class' => 'menu',
-				));
-				?>
-			</nav><!-- #site-navigation -->
-
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<div class="container">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container cont-nav">
+					<div class="logo">
 					<?php the_custom_logo(); ?>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					</div>					
+					<?php aws_get_search_form( true ); ?>
+					<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav'); endif; ?>
+					
+					<div class="ubicacion">
+						<a href="#"><i class="fa-solid fa-location-dot me-2"></i><span>Santiago</span></a>
+
+					</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-
 					<?php
 					wp_nav_menu(array(
 						'theme_location' => 'menu-1',
 						'menu_class' => 'navbar-nav',
+						'container_class' => 'collapse navbar-collapse nav-1',
+						'container_id' => 'navbarNav',
+						
 					));
 					?>
 					<?php
 					wp_nav_menu(array(
 						'theme_location' => 'secondary-menu',
 						'menu_class' => 'navbar-nav',
+						'container_class' => 'collapse navbar-collapse nav-2',
+						'container_id' => 'navbarNav',
+						
 					));
 					?>
 
