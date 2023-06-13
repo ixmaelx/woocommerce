@@ -34,9 +34,7 @@
 					<div class="logo">
 					<?php the_custom_logo(); ?>
 					</div>		
-					<div class="logo-chico">
-					<img src="<?php the_field('logo_chico')?>" alt="">
-					</div>			
+					<?php if (is_active_sidebar('logo_chico')) : dynamic_sidebar('logo_chico'); endif; ?>			
 					<?php aws_get_search_form( true ); ?>
 					<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav'); endif; ?>
 					

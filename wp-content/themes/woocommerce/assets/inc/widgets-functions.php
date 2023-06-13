@@ -26,6 +26,17 @@ function zona_widget()
   );
 }
 add_action('widgets_init', 'zona_widget');
+function logo_chico()
+{
+  register_sidebar(
+    array(
+      'name' => 'logo chico', 'id' => 'logo_chico', // le damos nombre e id al footer
+      'before_widget' => '<div id="%1$s" class="logo-chico">', // añadimos clase e id 
+      'after_widget' => '</div>', // cerramos el div
+    )
+  );
+}
+add_action('widgets_init', 'logo_chico');
 
 /*widget carrusel*/
 function widget_carrusel()
