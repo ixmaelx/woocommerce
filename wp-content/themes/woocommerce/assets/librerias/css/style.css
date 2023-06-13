@@ -19,6 +19,9 @@ a:visited{
     width: 162px;
     height: 40px;
 }
+.logo-chico{
+    display: none;
+}
 .aws-container,.aws-search-form{
     width: 580px;
     height: 40px!important;
@@ -235,11 +238,16 @@ background-color: #EBEBEB;
 
 @media (max-width: 1200px) {
     .aws-container,.aws-search-form{
-        width: 380px;
+        width: 400px;
     }
     .nav-1{
-        width: 380px;
-        height: 40px;
+        max-width: 400px;
+    }
+    .nav-2{
+    max-width: 330px;
+    }
+    .disney-nav{
+        max-width: 330px;
     }
     
 }
@@ -253,5 +261,42 @@ background-color: #EBEBEB;
     .navbar,.cont-nav{
         height: 60px;
     }
+    .cont-nav{
+        justify-content: space-between!important;
+    }
+    .nav-1,.nav-2,.navbar-nav{
+        z-index: 999;
+        background-color: #fff;
+        margin-top: 12px;
+        max-width: 100%;
+        height: auto;
+    }
+    .nav-2{
+        margin-top: 0px;
+    }
     
 }
+@media (max-width: 768px) {
+    .aws-container,.aws-search-form{
+        max-width: 300px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-chico{
+        display: block;
+        height: 40px;
+        width: 60px;
+    }
+    
+}
+@media (max-width:576px) {
+   .aws-container,.aws-search-form{
+        max-width: 200px;
+    }
+    .cont-nav{
+    gap: 0px 10px; 
+    }
+    
+}
+

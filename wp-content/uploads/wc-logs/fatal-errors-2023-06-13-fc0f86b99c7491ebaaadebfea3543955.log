@@ -1,2 +1,50 @@
 2023-06-13T05:35:30+00:00 CRITICAL syntax error, unexpected variable "$args", expecting "(" en C:\sitios_git\woocommerce\wp-content\themes\woocommerce\functions.php en la línea 190
 
+2023-06-13T16:51:52+00:00 CRITICAL Uncaught Error: Call to undefined function aws_get_search_form() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php:37
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\template.php(783): require_once()
+#1 C:\sitios git\woocommerce\wp-includes\template.php(718): load_template('C:\\sitios git\\w...', true, Array)
+#2 C:\sitios git\woocommerce\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\sitios git\woocommerce\wp-content\themes\woocommerce\home-page.php(16): get_header()
+#4 C:\sitios git\woocommerce\wp-includes\template-loader.php(106): include('C:\\sitios git\\w...')
+#5 C:\sitios git\woocommerce\wp-blog-header.php(19): require_once('C:\\sitios git\\w...')
+#6 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#7 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php en la línea 37
+
+2023-06-13T16:51:58+00:00 CRITICAL Uncaught Error: Call to undefined function aws_get_search_form() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php:37
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\template.php(783): require_once()
+#1 C:\sitios git\woocommerce\wp-includes\template.php(718): load_template('C:\\sitios git\\w...', true, Array)
+#2 C:\sitios git\woocommerce\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\sitios git\woocommerce\wp-content\themes\woocommerce\home-page.php(16): get_header()
+#4 C:\sitios git\woocommerce\wp-includes\template-loader.php(106): include('C:\\sitios git\\w...')
+#5 C:\sitios git\woocommerce\wp-blog-header.php(19): require_once('C:\\sitios git\\w...')
+#6 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#7 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php en la línea 37
+
+2023-06-13T16:51:58+00:00 CRITICAL Uncaught Error: Call to undefined function aws_get_search_form() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php:37
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\template.php(783): require_once()
+#1 C:\sitios git\woocommerce\wp-includes\template.php(718): load_template('C:\\sitios git\\w...', true, Array)
+#2 C:\sitios git\woocommerce\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\sitios git\woocommerce\wp-content\themes\woocommerce\home-page.php(16): get_header()
+#4 C:\sitios git\woocommerce\wp-includes\template-loader.php(106): include('C:\\sitios git\\w...')
+#5 C:\sitios git\woocommerce\wp-blog-header.php(19): require_once('C:\\sitios git\\w...')
+#6 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#7 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php en la línea 37
+
+2023-06-13T16:51:59+00:00 CRITICAL Uncaught Error: Call to undefined function aws_get_search_form() in C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php:37
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\template.php(783): require_once()
+#1 C:\sitios git\woocommerce\wp-includes\template.php(718): load_template('C:\\sitios git\\w...', true, Array)
+#2 C:\sitios git\woocommerce\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\sitios git\woocommerce\wp-content\themes\woocommerce\home-page.php(16): get_header()
+#4 C:\sitios git\woocommerce\wp-includes\template-loader.php(106): include('C:\\sitios git\\w...')
+#5 C:\sitios git\woocommerce\wp-blog-header.php(19): require_once('C:\\sitios git\\w...')
+#6 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#7 {main}
+  thrown en C:\sitios git\woocommerce\wp-content\themes\woocommerce\header.php en la línea 37
+
