@@ -29,14 +29,14 @@
 
 		<header id="masthead" class="site-header">
 
-			<nav id="site-navigation" class="main-navigation">
+			<nav id="site-navigation" class="main-navigation d-none">
 
 				<?php the_custom_logo(); ?>
 				<div class="custom-search">
 					<?php get_search_form(); ?>
 				</div>
-				<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav');endif; ?>
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'woocommerce'); ?></button>
+				<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav');
+				endif; ?>
 				<?php
 				wp_nav_menu(
 					array(
@@ -51,6 +51,32 @@
 					'menu_class' => 'menu',
 				));
 				?>
-
 			</nav><!-- #site-navigation -->
+
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container">
+					<?php the_custom_logo(); ?>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<?php
+					wp_nav_menu(array(
+						'theme_location' => 'menu-1',
+						'menu_class' => 'navbar-nav',
+					));
+					?>
+					<?php
+					wp_nav_menu(array(
+						'theme_location' => 'secondary-menu',
+						'menu_class' => 'navbar-nav',
+					));
+					?>
+
+
+
+				</div>
+			</nav>
+
+
 		</header><!-- #masthead -->

@@ -124,10 +124,31 @@ background-color: #EBEBEB;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    padding: 60px 0px 30px 0px;
 }
-
-
-
+#media_image-13,#media_image-10,#media_image-11{
+    display: flex;
+    justify-content: center;
+}
+.img-benefi{
+    width: 60px;
+    height: 46px!important;
+}
+.row-benefi{
+    width: 33%;
+    padding: 10px 30px;
+}
+.widgettitle {
+    text-align: center;
+    font-size: 20px;
+}
+.textwidget{
+    text-align: center;
+    font-size: 15px;
+}
+.wid-benefi{
+    margin-bottom: 20px;
+}
 /*main*/
 
 /*footer*/

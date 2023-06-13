@@ -183,3 +183,24 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 include get_template_directory() . '/assets/assets.php';
+
+function cambiar_clase_menu_container($args) {
+    $args['container_class'] = 'collapse navbar-collapse';
+	$args['container_id'] = 'navbarNavDropdown';
+    return $args;
+}
+add_filter('wp_nav_menu_args', 'cambiar_clase_menu_container');
+function agregar_clase_a_enlace($atts, $item, $args) {
+    $atts['class'] = 'nav-link'; // Reemplaza 'nueva-clase-enlace' por la clase que desees utilizar
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'agregar_clase_a_enlace', 10, 3);
+
+//function agregar_clase_a_enlace_menu_especifico($atts, $item, $args) {
+    // Reemplaza 'nombre-del-menu' por el slug del menú que deseas modificar
+    //if ($args->theme_location == 'nombre-del-menu') {
+     //   $atts['class'] = 'nueva-clase-enlace-menu-especifico';
+    //}
+   // return $atts;
+//}
+//add_filter('nav_menu_link_attributes', 'agregar_clase_a_enlace_menu_especifico', 10, 3);

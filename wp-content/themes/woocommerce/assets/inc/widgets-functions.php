@@ -60,21 +60,21 @@ function beneficios()
   register_sidebar(
     array(
       'name' => 'beneficios-1', 'id' => 'beneficio_1', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" clas="wid-benefi">', // añadimos clase e id 
+      'before_widget' => '<div id="%1$s" class="wid-benefi">', // añadimos clase e id 
       'after_widget' => '</div>', // cerramos el div
     )
   );
   register_sidebar(
     array(
       'name' => 'beneficios-2', 'id' => 'beneficio_2', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" clas="wid-benefi">', // añadimos clase e id 
+      'before_widget' => '<div id="%1$s" class="wid-benefi">', // añadimos clase e id 
       'after_widget' => '</div>', // cerramos el div
     )
   );
   register_sidebar(
     array(
       'name' => 'beneficios-3', 'id' => 'beneficio_3', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" clas="wid-benefi">', // añadimos clase e id 
+      'before_widget' => '<div id="%1$s" class="wid-benefi">', // añadimos clase e id 
       'after_widget' => '</div>', // cerramos el div
     )
   );

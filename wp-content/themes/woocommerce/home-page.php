@@ -58,15 +58,15 @@ get_header();
 	<h2 class="mt-5">nuevos productos</h2>
 	<section class="sec-beneficios">
 		<div class="container cont-beneficios">
-			<div>
+			<div class="row-benefi">
 				<?php if (is_active_sidebar('beneficio_1')) : dynamic_sidebar('beneficio_1');
 				endif; ?>
 			</div>
-			<div>
+			<div class="row-benefi">
 				<?php if (is_active_sidebar('beneficio_2')) : dynamic_sidebar('beneficio_2');
 				endif; ?>
 			</div>
-			<div>
+			<div class="row-benefi">
 				<?php if (is_active_sidebar('beneficio_3')) : dynamic_sidebar('beneficio_3');
 				endif; ?>
 			</div>
