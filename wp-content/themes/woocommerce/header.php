@@ -32,12 +32,14 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container cont-nav">
 					<div class="logo">
-					<?php the_custom_logo(); ?>
-					</div>		
-					<?php if (is_active_sidebar('logo_chico')) : dynamic_sidebar('logo_chico'); endif; ?>			
-					<?php aws_get_search_form( true ); ?>
-					<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav'); endif; ?>
-					
+						<?php the_custom_logo(); ?>
+					</div>
+					<?php if (is_active_sidebar('logo_chico')) : dynamic_sidebar('logo_chico');
+					endif; ?>
+					<?php aws_get_search_form(true); ?>
+					<?php if (is_active_sidebar('img_nav')) : dynamic_sidebar('img_nav');
+					endif; ?>
+
 					<div class="ubicacion">
 						<a href="#"><i class="fa-solid fa-location-dot me-2"></i><span>Santiago</span></a>
 
@@ -51,7 +53,7 @@
 						'menu_class' => 'navbar-nav',
 						'container_class' => 'collapse navbar-collapse nav-1',
 						'container_id' => 'navbarNav',
-						
+
 					));
 					?>
 					<?php
@@ -60,10 +62,16 @@
 						'menu_class' => 'navbar-nav',
 						'container_class' => 'collapse navbar-collapse nav-2',
 						'container_id' => 'navbarNav',
-						
+
 					));
 					?>
-
+					<script>
+						$(document).ready(function() {
+							$('#menu-item-67').children().first().removeAttr('href').attr('role', 'button').attr('data-bs-toggle', 'dropdown')
+								.attr('aria-expanded', 'false').addClass('nav-link dropdown-toggle');
+							$('#menu-item-112,#menu-item-113,#menu-item-114').removeClass().addClass('dropdown-item')
+						});
+					</script>
 
 
 				</div>
