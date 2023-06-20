@@ -44,19 +44,54 @@ get_header();
 		</button>
 	</div>
 
-	<section>
-		<div class="container">
-			<ul class="mt-5 rectangulo-pagos">
-				<li class="pagos">Paga comodo y seguro</li>
-				<li class="pagos"><i class="fa-brands fa-cc-visa me-3 ico-pagos" style="color: #5697FA;"></i>Hasta 12 cuotas sin interés</li>
-				<li class="pagos"><i class="fa-regular fa-credit-card me-3 ico-pagos" style="color: #5697FA;"></i>Tarjeta de debito</li>
-				<li class="pagos"><i class="fa-solid fa-plus me-3 ico-pagos" style="color: #5697FA;"></i>Más medio de pago</li>
-			</ul>
+	<section class="container">
+
+		<ul class="mt-5 rectangulo-pagos">
+			<li class="pagos">Paga comodo y seguro</li>
+			<li class="pagos"><i class="fa-brands fa-cc-visa me-3 ico-pagos" style="color: #5697FA;"></i>Hasta 12 cuotas sin interés</li>
+			<li class="pagos"><i class="fa-regular fa-credit-card me-3 ico-pagos" style="color: #5697FA;"></i>Tarjeta de debito</li>
+			<li class="pagos"><i class="fa-solid fa-plus me-3 ico-pagos" style="color: #5697FA;"></i>Más medio de pago</li>
+		</ul>
+
+
+	</section>
+	<section class="container">
+		<h2 class="mt-5">Celulares</h2>
+		<div class="carrusel-productos-home mt-4" id="carrusel-productos">
+			<?php
+			$args = array(
+				'posts_per_page' => 8,
+				'post_type'     => 'product',
+				'post_status'   => 'publish',
+				'tax_query'     => array(
+					array(
+						'taxonomy' => 'product_cat',
+						'field'   => 'slug',
+						'terms'   => 'smartphones',
+						'operator' => 'IN',
+					),
+				)
+			);
+			$featured_product = new WP_Query($args);
+			if ($featured_product->have_posts()) {
+				while ($featured_product->have_posts()) : $featured_product->the_post();
+			?>
+
+					<a class="tarjeta-producto-home" href="<?php the_permalink();?>">
+						<?php wc_get_template_part('content', 'product'); ?>
+			</a>
+
+			<?php
+				endwhile;
+			} else {
+				echo __('Lo sentimos no hay productos');
+			}
+			wp_reset_postdata();
+			?>
 
 		</div>
 	</section>
-	<h2 class="mt-5">nuevos productos</h2>
-	<section class="sec-beneficios">
+	<section class="sec-beneficios mt-5">
 		<div class="container cont-beneficios">
 			<div class="row-benefi">
 				<?php if (is_active_sidebar('beneficio_1')) : dynamic_sidebar('beneficio_1');
