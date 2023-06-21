@@ -56,8 +56,8 @@ get_header();
 
 	</section>
 	<section class="container">
-		<h2 class="mt-5">Celulares</h2>
-		<div class="carrusel-productos-home mt-4" id="carrusel-productos">
+		<h2 class="mt-5">Smartphones</h2>
+		<div class="carrusel-productos-home mt-4" id="carrusel-smartphones">
 			<?php
 			$args = array(
 				'posts_per_page' => 8,
@@ -76,11 +76,47 @@ get_header();
 			if ($featured_product->have_posts()) {
 				while ($featured_product->have_posts()) : $featured_product->the_post();
 			?>
+					<a href="<?php the_permalink(); ?>">
+						<div class="tarjeta-producto-home">
+							<?php wc_get_template_part('content', 'product'); ?>
+						</div>
+					</a>
+			<?php
+				endwhile;
+			} else {
+				echo __('Lo sentimos no hay productos');
+			}
+			wp_reset_postdata();
+			?>
 
-					<a class="tarjeta-producto-home" href="<?php the_permalink();?>">
-						<?php wc_get_template_part('content', 'product'); ?>
-			</a>
-
+		</div>
+	</section>
+	<section class="container">
+		<h2 class="mt-5">Notebooks</h2>
+		<div class="carrusel-productos-home mt-4" id="carrusel-notebooks">
+			<?php
+			$args = array(
+				'posts_per_page' => 8,
+				'post_type'     => 'product',
+				'post_status'   => 'publish',
+				'tax_query'     => array(
+					array(
+						'taxonomy' => 'product_cat',
+						'field'   => 'slug',
+						'terms'   => 'notebooks',
+						'operator' => 'IN',
+					),
+				)
+			);
+			$featured_product = new WP_Query($args);
+			if ($featured_product->have_posts()) {
+				while ($featured_product->have_posts()) : $featured_product->the_post();
+			?>
+					<a href="<?php the_permalink(); ?>">
+						<div class="tarjeta-producto-home">
+							<?php wc_get_template_part('content', 'product'); ?>
+						</div>
+					</a>
 			<?php
 				endwhile;
 			} else {
@@ -107,9 +143,6 @@ get_header();
 			</div>
 		</div>
 	</section>
-
-
-
 
 </main><!-- #main -->
 

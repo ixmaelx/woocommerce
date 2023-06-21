@@ -69,8 +69,10 @@
 						$(document).ready(function() {
 							$('#menu-item-67').children().first().removeAttr('href').attr('role', 'button').attr('data-bs-toggle', 'dropdown')
 								.attr('aria-expanded', 'false').addClass('nav-link dropdown-toggle');
-							$('#menu-item-112,#menu-item-113,#menu-item-114').removeClass().addClass('dropdown-item')
+							$('#menu-item-112,#menu-item-113,#menu-item-114').removeClass().addClass('dropdown-item');
 						});
+
+						
 					</script>
 
 

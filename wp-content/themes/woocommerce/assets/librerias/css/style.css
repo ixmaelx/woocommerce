@@ -150,14 +150,38 @@ background-color: #EBEBEB;
     margin-bottom: 20px;
 }
 .carrusel-productos-home{
-    overflow: hidden;
+    position: relative;
 }
 .tarjeta-producto-home{
-    width: 20%;
     height: 350px;
     background-color: #fff;
     padding: 15px;
 }
+
+.slick-list{
+    overflow: hidden;
+}
+.slick-prev{
+    position: absolute;
+    z-index: 9;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    top: 42%;
+    left: -37px;
+    background-color: #fff;
+
+}
+.slick-next{
+    position: absolute;
+    top: 42%;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    right: -16px;
+    background-color: #fff;
+}
+
 .attachment-woocommerce_thumbnail{
     border-style: none;
     width: 100%;
