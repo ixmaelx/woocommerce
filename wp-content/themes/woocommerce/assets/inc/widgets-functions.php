@@ -92,3 +92,29 @@ function beneficios()
 }
 add_action('widgets_init', 'beneficios');
 
+function m_puntos()
+{
+  register_sidebar(
+    array(
+      'name' => 'm-puntos1', 'id' => 'm_puntos_1', // le damos nombre e id al footer
+      'before_widget' => '<div id="%1$s" class="wid-mpunt">', // añadimos clase e id 
+      'after_widget' => '</div>', // cerramos el div
+    )
+  );
+  register_sidebar(
+    array(
+      'name' => 'm-puntos2', 'id' => 'm_puntos_2', // le damos nombre e id al footer
+      'before_widget' => '<div id="%1$s" class="wid-mpunt">', // añadimos clase e id 
+      'after_widget' => '</div>', // cerramos el div
+    )
+  );
+  register_sidebar(
+    array(
+      'name' => 'm-puntos3', 'id' => 'm_puntos_3', // le damos nombre e id al footer
+      'before_widget' => '<div id="%1$s" class="wid-mpunt">', // añadimos clase e id 
+      'after_widget' => '</div>', // cerramos el div
+    )
+  );
+}
+add_action('widgets_init', 'm_puntos');
+

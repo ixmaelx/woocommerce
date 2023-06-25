@@ -127,6 +127,18 @@ get_header();
 
 		</div>
 	</section>
+	<section class="container mt-5">
+		<h2>Beneficios de Mercado Puntos</h2>
+		<div class="m-puntos mt-4">
+			<?php if (is_active_sidebar('m_puntos_1')) : dynamic_sidebar('m_puntos_1');
+			endif; ?>
+			<?php if (is_active_sidebar('m_puntos_2')) : dynamic_sidebar('m_puntos_2');
+			endif; ?>
+			<?php if (is_active_sidebar('m_puntos_3')) : dynamic_sidebar('m_puntos_3');
+			endif; ?>
+		</div>
+
+	</section>
 	<section class="sec-beneficios mt-5">
 		<div class="container cont-beneficios d-none d-md-flex">
 			<div class="row-benefi">

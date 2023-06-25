@@ -99,15 +99,48 @@ background-color: #EBEBEB;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 90px;
     align-items: center;
     border-radius:5px ;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     border-left: 4px solid #3483FA;
+    overflow: scroll;
+    justify-content: space-between;
+    gap: 25px;
+    scrollbar-width: none;
+}
+.rectangulo-pagos::-webkit-scrollbar{
+    display: none;
 }
 .pagos{
     list-style: none;
+}
+.pagos:nth-child(1){
+    min-width:170px ;
+}
+.pagos:nth-child(2){
+    min-width:255px ;
+}
+.pagos:nth-child(3){
+    min-width:185px ;
+}
+.pagos:nth-child(4){
+    min-width:205px ;
+}
+.m-puntos{
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.m-puntos::-webkit-scrollbar{
+    display: none;
+}
+.wid-mpunt{
+    min-width: 414px;
+}
+.wid-mpunt img{
+    border-radius: 7px;
 }
 .ico-pagos{
     color: #5697FA;
@@ -200,6 +233,9 @@ background-color: #EBEBEB;
 .woocommerce-loop-product__title{
     font-size: 14px;
     color: #666;
+}
+#carouselExampleIndicators2{
+    padding: 60px 30px 30px 30px;
 }
 
 /*main*/
