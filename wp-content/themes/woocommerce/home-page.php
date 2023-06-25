@@ -128,7 +128,7 @@ get_header();
 		</div>
 	</section>
 	<section class="sec-beneficios mt-5">
-		<div class="container cont-beneficios">
+		<div class="container cont-beneficios d-none d-md-flex">
 			<div class="row-benefi">
 				<?php if (is_active_sidebar('beneficio_1')) : dynamic_sidebar('beneficio_1');
 				endif; ?>
@@ -141,6 +141,37 @@ get_header();
 				<?php if (is_active_sidebar('beneficio_3')) : dynamic_sidebar('beneficio_3');
 				endif; ?>
 			</div>
+		</div>
+
+		<div id="carouselExampleIndicators2" class="carousel slide d-md-none">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<?php if (is_active_sidebar('beneficio_1')) : dynamic_sidebar('beneficio_1');
+					endif; ?>
+				</div>
+				<div class="carousel-item">
+					<?php if (is_active_sidebar('beneficio_2')) : dynamic_sidebar('beneficio_2');
+					endif; ?>
+				</div>
+				<div class="carousel-item">
+					<?php if (is_active_sidebar('beneficio_3')) : dynamic_sidebar('beneficio_3');
+					endif; ?>
+				</div>
+
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
 	</section>
 

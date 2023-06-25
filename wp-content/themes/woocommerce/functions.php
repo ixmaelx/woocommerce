@@ -184,15 +184,13 @@ if (defined('JETPACK__VERSION')) {
 /**
  * Load WooCommerce compatibility file.
  */
-if (class_exists('WooCommerce')) {
-	require get_template_directory() . '/inc/woocommerce.php';
-}
+
 include get_template_directory() . '/assets/assets.php';
 
 
 function agregar_clase_a_enlace($atts, $item, $args)
 {
-	$atts['class'] = 'nav-link'; // Reemplaza 'nueva-clase-enlace' por la clase que desees utilizar
+	$atts['class'] = 'nav-link';
 	return $atts;
 }
 add_filter('nav_menu_link_attributes', 'agregar_clase_a_enlace', 10, 3);
@@ -200,7 +198,6 @@ add_filter('nav_menu_link_attributes', 'agregar_clase_a_enlace', 10, 3);
 function custom_menu_classes($classes, $item, $args, $depth) {
     if (in_array('menu-item-has-children', $classes)) {
         $classes[] = 'dropdown';
-        // Puedes eliminar la clase original si lo deseas
         $classes = array_diff($classes, array('menu-item-has-children'));
     }
     return $classes;
@@ -209,7 +206,6 @@ add_filter('nav_menu_css_class', 'custom_menu_classes', 10, 4);
 
 function custom_submenu_class($classes, $args, $depth) {
     $classes[] = 'dropdown-menu';
-    // Puedes eliminar la clase original si lo deseas
     $classes = array_diff($classes, array('sub-menu'));
     return $classes;
 }

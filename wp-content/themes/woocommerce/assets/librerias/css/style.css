@@ -7,6 +7,9 @@ a:visited{
 a{
     text-decoration: none;
 }
+body{
+    margin: 0px !important;;
+}
 /*nav*/
 .site-header{
     background-color: #fff15b;

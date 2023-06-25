@@ -22,15 +22,15 @@
 					</button>
 				</h2>
 				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-					<div class="accordion-body">
-						<ul class="foot-arriba">
+					<div class="accordion-body row">
+						<ul class="foot-arriba col-6 col-md-4 col-lg-2 mb-2">
 							<li class="mini-titulo">Acerca de</li>
 							<li class="info-foot-arriba">Mercado libre</li>
 							<li class="info-foot-arriba">Investor relations</li>
 							<li class="info-foot-arriba">Tendencias</li>
 							<li class="info-foot-arriba">Sustentabilidad</li>
 						</ul>
-						<ul class="foot-arriba">
+						<ul class="foot-arriba col-6 col-md-4 col-lg-2 mb-2">
 							<li class="mini-titulo">Otros sitios</li>
 							<li class="info-foot-arriba">Developers</li>
 							<li class="info-foot-arriba">Mercado Pago</li>
@@ -38,26 +38,26 @@
 							<li class="info-foot-arriba">Mercado Envíos</li>
 							<li class="info-foot-arriba">Mercado Ads</li>
 						</ul>
-						<ul class="foot-arriba">
+						<ul class="foot-arriba col-6 col-md-4 col-lg-2 mb-2">
 							<li class="mini-titulo">Ayuda</li>
 							<li class="info-foot-arriba">Comprar</li>
 							<li class="info-foot-arriba">Vender</li>
 							<li class="info-foot-arriba">Resolución de problemas</li>
 							<li class="info-foot-arriba">Centro de seguridad</li>
 						</ul>
-						<ul class="foot-arriba">
+						<ul class="foot-arriba col-6 col-md-4 col-lg-2 mb-2">
 							<li class="mini-titulo">Redes sociales</li>
 							<li class="info-foot-arriba">Twitter</li>
 							<li class="info-foot-arriba">Facebook</li>
 							<li class="info-foot-arriba">YouTube</li>
 						</ul>
-						<ul class="foot-arriba">
+						<ul class="foot-arriba col-6 col-md-4 col-lg-2 mb-2">
 							<li class="mini-titulo">Mi cuenta</li>
 							<li class="info-foot-arriba">Resumen</li>
 							<li class="info-foot-arriba">Favoritos</li>
 							<li class="info-foot-arriba">Vender</li>
 						</ul>
-						<ul class="foot-arriba">
+						<ul class="foot-arriba col-6 col-md-4 col-lg-2 mb-2">
 							<li class="mini-titulo">Mercado Puntos</li>
 							<li class="info-foot-arriba">Nivel 6</li>
 							<li class="info-foot-arriba">Disney+</li>
