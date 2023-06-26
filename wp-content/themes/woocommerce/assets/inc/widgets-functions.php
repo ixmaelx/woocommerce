@@ -44,21 +44,21 @@ function widget_carrusel()
   register_sidebar(
     array(
       'name' => 'carrusel 1', 'id' => 'carrusel_img1', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" class="carousel-item active">', // añadimos clase e id 
+      'before_widget' => '<div id="%1$s" class="carousel-item active" data-bs-interval="3000">', // añadimos clase e id 
       'after_widget' => '</div>', // cerramos el div
     )
   );
   register_sidebar(
     array(
       'name' => 'carrusel 2', 'id' => 'carrusel_img2', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" class="carousel-item">', // añadimos clase e id 
+      'before_widget' => '<div id="%1$s" class="carousel-item" data-bs-interval="3000">', // añadimos clase e id 
       'after_widget' => '</div>', // cerramos el div
     )
   );
   register_sidebar(
     array(
       'name' => 'carrusel 3', 'id' => 'carrusel_img3', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" class="carousel-item">', // añadimos clase e id 
+      'before_widget' => '<div id="%1$s" class="carousel-item" data-bs-interval="3000">', // añadimos clase e id 
       'after_widget' => '</div>', // cerramos el div
     )
   );

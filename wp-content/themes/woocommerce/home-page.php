@@ -56,7 +56,7 @@ get_header();
 
 	</section>
 	<section class="container">
-		<h2 class="mt-5">Smartphones</h2>
+		<h2 class="mt-5 titu-secs">Smartphones</h2>
 		<div class="carrusel-productos-home mt-4" id="carrusel-smartphones">
 			<?php
 			$args = array(
@@ -92,7 +92,7 @@ get_header();
 		</div>
 	</section>
 	<section class="container">
-		<h2 class="mt-5">Notebooks</h2>
+		<h2 class="mt-5 titu-secs">Notebooks</h2>
 		<div class="carrusel-productos-home mt-4" id="carrusel-notebooks">
 			<?php
 			$args = array(
@@ -128,7 +128,7 @@ get_header();
 		</div>
 	</section>
 	<section class="container mt-5">
-		<h2>Beneficios de Mercado Puntos</h2>
+		<h2 class="titu-secs">Beneficios de Mercado Puntos</h2>
 		<div class="m-puntos mt-4">
 			<?php if (is_active_sidebar('m_puntos_1')) : dynamic_sidebar('m_puntos_1');
 			endif; ?>
