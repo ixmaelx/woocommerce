@@ -31,8 +31,8 @@ function logo_chico()
   register_sidebar(
     array(
       'name' => 'logo chico', 'id' => 'logo_chico', // le damos nombre e id al footer
-      'before_widget' => '<div id="%1$s" class="logo-chico">', // añadimos clase e id 
-      'after_widget' => '</div>', // cerramos el div
+      'before_widget' => '<a href="https://pgalarce.laboratoriodiseno.cl/woocommerce/" id="%1$s" class="logo-chico">', // añadimos clase e id 
+      'after_widget' => '</a>', // cerramos el div
     )
   );
 }
