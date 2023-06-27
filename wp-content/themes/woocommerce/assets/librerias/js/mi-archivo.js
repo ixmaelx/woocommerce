@@ -56,6 +56,32 @@ jQuery(function ($) {
         }]
     });
 
+    $('#carrusel-relacionados').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 1000,
+        arrows: true,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 375,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+
     
 
 

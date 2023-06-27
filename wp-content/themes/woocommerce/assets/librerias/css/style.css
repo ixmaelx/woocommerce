@@ -507,65 +507,70 @@ body {
 
 
 /*single producto ajs*/
-.woocommerce-product-gallery {
-    position: relative;
-    display: flex;
-    flex-flow: row-reverse;
+.mini-header{
+    background-color: #EDEDED;
 }
-/*miniaturas img*/
-.woocommerce div.product div.images .flex-control-thumbs  {
-    display: flex;
-    flex-flow: column;
-    margin-right: 95px;
-    width: 380px;
+.entry-title{
+    font-size: 22px;
+    font-weight: 600;
 }
-
-.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+.page-content, .entry-content, .entry-summary{
+    margin: 0px;
+}
+.woocommerce-product-gallery__trigger{
     display: none;
 }
-
-.cuadro-cosas {
-    padding: 0px 30px 0px 30px;
+.cuadro-cosas{
+    display: flex;
+    flex-flow: row wrap;
     background-color: #fff;
     border: 0.5px solid #d5d5d5;
-    border-radius: 5px;
+    border-radius:0px 0px 5px 5px;
+    padding: 20px 30px 0px 30px;
+    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 14%;
 }
-/*sumary*/
-.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
-    float: right;
-    width: 34%;
-    clear: none;
+.woocommerce-product-gallery{
+    width: 41%;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+.summary{
+    width: 30%;
+    border: 0.5px solid #d5d5d5;
+    border-radius: 5px;
+    margin: 0px;
     padding: 15px;
-    border: 0.5px solid #d5d5d5;
-    border-radius: 5px;
 }
-/*imagen grande galeria*/
-.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
-    float: left;
-    width: 50%;
-}
-.woocommerce div.product div.images .flex-control-thumbs li {
-    width: 80%;
-    border: 0.5px solid #d5d5d5;
-    padding: 5px;
-    border-radius: 5px;
-}
-
+/*imagenes miniatura*/
 .woocommerce div.product div.images .flex-control-thumbs {
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+    width: 12%;
     display: flex;
     flex-flow: column;
-    align-items: center;
-    gap: 20px;
-}
+    gap: 15px;
+    position: absolute;
+    left: -172px;
+  }
+  .woocommerce div.product div.images .flex-control-thumbs li {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid #d5d5d5;
+    border-radius: 5px;
+  }
 
+ 
 /*single producto jaj*/
 
 @media (min-width: 1400px) {
 
-     .container-single{
+    .container-single {
         max-width: 1200px;
     }
 
 }
-
-
