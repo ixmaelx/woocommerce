@@ -57,7 +57,7 @@ jQuery(function ($) {
     });
 
     $('#carrusel-relacionados').slick({
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 1000,
@@ -83,7 +83,10 @@ jQuery(function ($) {
     });
 
     
-
+    $('.entry-title').prependTo('.summary');
+	$('.related').css('width','100%');
+    $('#carrusel-relacionados').css('position','relative');
+    $('#carrusel-relacionados div.slick-list div.slick-track div.product').addClass('tarjeta-producto-home');
 
 		
 
