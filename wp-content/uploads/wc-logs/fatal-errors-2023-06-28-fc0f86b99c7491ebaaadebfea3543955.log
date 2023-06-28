@@ -40,3 +40,5 @@ Stack trace:
 #33 {main}
   thrown en C:\sitios git\woocommerce\wp-includes\formatting.php en la línea 1596
 
+2023-06-28T18:08:47+00:00 CRITICAL syntax error, unexpected token "if" en C:\sitios git\woocommerce\wp-content\themes\woocommerce\woocommerce\cart\cart-empty.php en la línea 26
+

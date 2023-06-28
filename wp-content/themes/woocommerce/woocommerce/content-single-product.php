@@ -81,7 +81,7 @@ if (post_password_required()) {
 				<h3 class="mini-h3">Informacion sobre el vendedor</h3>
 			</div>
 			<div class="descrip-single mb-5">
-				<h2 class="titu-secs mb-4">Descripcion</h2>
+				<h2 class="titu-secs mb-4">Descripción</h2>
 				<?php the_content(); ?>
 			</div>
 			<div class="summary-2">
