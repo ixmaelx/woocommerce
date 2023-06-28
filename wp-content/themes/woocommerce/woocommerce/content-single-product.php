@@ -94,14 +94,15 @@ if (post_password_required()) {
 		<div class="carrusel-productos-home mt-4" id="carrusel-notebooks">
 			<?php
 			$args = array(
-				'posts_per_page' => 8,
+				'posts_per_page' => -15,
 				'post_type'     => 'product',
+				'orderby'     => 'rand',
 				'post_status'   => 'publish',
 				'tax_query'     => array(
 					array(
 						'taxonomy' => 'product_cat',
 						'field'   => 'slug',
-						'terms'   => 'notebooks',
+						'terms'   => array('notebooks','smartphones'),
 						'operator' => 'IN',
 					),
 				)

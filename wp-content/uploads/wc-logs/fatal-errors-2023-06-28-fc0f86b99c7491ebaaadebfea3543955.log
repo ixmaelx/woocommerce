@@ -1,0 +1,42 @@
+2023-06-28T07:32:36+00:00 CRITICAL syntax error, unexpected single-quoted string "operator", expecting ")" en C:\sitios git\woocommerce\wp-content\themes\woocommerce\woocommerce\content-single-product.php en la línea 105
+
+2023-06-28T07:34:49+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" en C:\sitios git\woocommerce\wp-content\themes\woocommerce\woocommerce\content-single-product.php en la línea 108
+
+2023-06-28T07:36:36+00:00 CRITICAL Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, array given in C:\sitios git\woocommerce\wp-includes\formatting.php:1596
+Stack trace:
+#0 C:\sitios git\woocommerce\wp-includes\formatting.php(1596): preg_match('/[\\x80-\\xff]/', Array)
+#1 C:\sitios git\woocommerce\wp-includes\formatting.php(2208): remove_accents(Array)
+#2 [internal function]: sanitize_title(Array)
+#3 C:\sitios git\woocommerce\wp-includes\class-wp-term-query.php(561): array_map('sanitize_title', Array)
+#4 C:\sitios git\woocommerce\wp-includes\class-wp-term-query.php(308): WP_Term_Query->get_terms()
+#5 C:\sitios git\woocommerce\wp-includes\class-wp-tax-query.php(644): WP_Term_Query->query(Array)
+#6 C:\sitios git\woocommerce\wp-includes\class-wp-tax-query.php(567): WP_Tax_Query->transform_query(Array, 'term_id')
+#7 C:\sitios git\woocommerce\wp-includes\class-wp-tax-query.php(395): WP_Tax_Query->clean_query(Array)
+#8 C:\sitios git\woocommerce\wp-includes\class-wp-tax-query.php(325): WP_Tax_Query->get_sql_for_clause(Array, Array)
+#9 C:\sitios git\woocommerce\wp-includes\class-wp-tax-query.php(275): WP_Tax_Query->get_sql_for_query(Array)
+#10 C:\sitios git\woocommerce\wp-includes\class-wp-tax-query.php(251): WP_Tax_Query->get_sql_clauses()
+#11 C:\sitios git\woocommerce\wp-includes\class-wp-query.php(2236): WP_Tax_Query->get_sql('wp_posts', 'ID')
+#12 C:\sitios git\woocommerce\wp-includes\class-wp-query.php(3787): WP_Query->get_posts()
+#13 C:\sitios git\woocommerce\wp-includes\class-wp-query.php(3919): WP_Query->query(Array)
+#14 C:\sitios git\woocommerce\wp-content\themes\woocommerce\woocommerce\content-single-product.php(109): WP_Query->__construct(Array)
+#15 C:\sitios git\woocommerce\wp-includes\template.php(785): require('C:\\sitios git\\w...')
+#16 C:\sitios git\woocommerce\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\sitios git\\w...', false)
+#17 C:\sitios git\woocommerce\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(598): wc_get_template_part('content', 'single-product')
+#18 C:\sitios git\woocommerce\wp-includes\shortcodes.php(355): WC_Shortcodes::product_page(Array, '', 'product_page')
+#19 [internal function]: do_shortcode_tag(Array)
+#20 C:\sitios git\woocommerce\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(produc...', 'do_shortcode_ta...', '[product_page i...')
+#21 C:\sitios git\woocommerce\wp-content\plugins\woocommerce\includes\class-wc-template-loader.php(634): do_shortcode('[product_page i...')
+#22 C:\sitios git\woocommerce\wp-includes\class-wp-hook.php(308): WC_Template_Loader::unsupported_theme_product_content_filter('<p>La IA mejora...')
+#23 C:\sitios git\woocommerce\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>La IA mejora...', Array)
+#24 C:\sitios git\woocommerce\wp-includes\post-template.php(255): apply_filters('the_content', 'La IA mejorada ...')
+#25 C:\sitios git\woocommerce\wp-content\themes\woocommerce\template-parts\content.php(36): the_content('Continue readin...')
+#26 C:\sitios git\woocommerce\wp-includes\template.php(785): require('C:\\sitios git\\w...')
+#27 C:\sitios git\woocommerce\wp-includes\template.php(718): load_template('C:\\sitios git\\w...', false, Array)
+#28 C:\sitios git\woocommerce\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#29 C:\sitios git\woocommerce\wp-content\themes\woocommerce\single.php(19): get_template_part('template-parts/...', 'product')
+#30 C:\sitios git\woocommerce\wp-includes\template-loader.php(106): include('C:\\sitios git\\w...')
+#31 C:\sitios git\woocommerce\wp-blog-header.php(19): require_once('C:\\sitios git\\w...')
+#32 C:\sitios git\woocommerce\index.php(17): require('C:\\sitios git\\w...')
+#33 {main}
+  thrown en C:\sitios git\woocommerce\wp-includes\formatting.php en la línea 1596
+
