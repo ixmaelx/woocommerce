@@ -57,7 +57,7 @@ jQuery(function ($) {
     });
 
     $('#carrusel-relacionados').slick({
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 1000,
@@ -84,9 +84,12 @@ jQuery(function ($) {
 
     
     $('.entry-title').prependTo('.summary');
-	$('.related').css('width','100%');
+	$('.related').css('width','62%');
     $('#carrusel-relacionados').css('position','relative');
     $('#carrusel-relacionados div.slick-list div.slick-track div.product').addClass('tarjeta-producto-home');
+    $('.woocommerce-tabs').css('display','none')
+    $('nav.navigation').css('display','none')
+    $('div#comments').appendTo('.cuadro-cosas')
 
 		
 

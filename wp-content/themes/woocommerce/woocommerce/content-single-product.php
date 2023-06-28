@@ -77,9 +77,54 @@ if (post_password_required()) {
 			 */
 			do_action('woocommerce_after_single_product_summary');
 			?>
+			<div class="summary-2">
+				<h3 class="mini-h3">Informacion sobre el vendedor</h3>
+			</div>
+			<div class="descrip-single mb-5">
+				<h2 class="titu-secs mb-4">Descripcion</h2>
+				<?php the_content(); ?>
+			</div>
+			<div class="summary-2">
+				<h3 class="mini-h3">Medios de pago</h3>
+			</div>
+		</div>
 
+		<section class="container">
+		<h2 class="mt-5 titu-secs">Más productos</h2>
+		<div class="carrusel-productos-home mt-4" id="carrusel-notebooks">
+			<?php
+			$args = array(
+				'posts_per_page' => 8,
+				'post_type'     => 'product',
+				'post_status'   => 'publish',
+				'tax_query'     => array(
+					array(
+						'taxonomy' => 'product_cat',
+						'field'   => 'slug',
+						'terms'   => 'notebooks',
+						'operator' => 'IN',
+					),
+				)
+			);
+			$featured_product = new WP_Query($args);
+			if ($featured_product->have_posts()) {
+				while ($featured_product->have_posts()) : $featured_product->the_post();
+			?>
+					<a href="<?php the_permalink(); ?>">
+						<div class="tarjeta-producto-home">
+							<?php wc_get_template_part('content', 'product'); ?>
+						</div>
+					</a>
+			<?php
+				endwhile;
+			} else {
+				echo __('Lo sentimos no hay productos');
+			}
+			wp_reset_postdata();
+			?>
 
 		</div>
+	</section>
 	</div>
 </div>
 

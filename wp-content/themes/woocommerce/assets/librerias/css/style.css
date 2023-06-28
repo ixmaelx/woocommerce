@@ -507,43 +507,52 @@ body {
 
 
 /*single producto ajs*/
-.mini-header{
+.mini-header {
     background-color: #EDEDED;
 }
-.entry-title{
+
+.entry-title {
     font-size: 22px;
     font-weight: 600;
 }
-.page-content, .entry-content, .entry-summary{
+
+.page-content,
+.entry-content,
+.entry-summary {
     margin: 0px;
 }
-.woocommerce-product-gallery__trigger{
+
+.woocommerce-product-gallery__trigger {
     display: none;
 }
-.cuadro-cosas{
+
+.cuadro-cosas {
     display: flex;
     flex-flow: row wrap;
     background-color: #fff;
     border: 0.5px solid #d5d5d5;
-    border-radius:0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
     padding: 20px 30px 0px 30px;
-    justify-content: space-between;
-    justify-content: flex-end;
-    gap: 14%;
+    gap: 2%;
 }
-.woocommerce-product-gallery{
-    width: 41%;
+
+.woocommerce-product-gallery {
+    width: 53%;
     display: flex;
     flex-flow: row-reverse;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: 45px;
 }
-.summary{
+
+.summary {
     width: 30%;
     border: 0.5px solid #d5d5d5;
     border-radius: 5px;
     margin: 0px;
     padding: 15px;
 }
+
 /*imagenes miniatura*/
 .woocommerce div.product div.images .flex-control-thumbs {
     overflow: hidden;
@@ -555,17 +564,43 @@ body {
     flex-flow: column;
     gap: 15px;
     position: absolute;
-    left: -172px;
-  }
-  .woocommerce div.product div.images .flex-control-thumbs li {
+    left: -126px;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
     width: 100%;
     padding: 10px;
     border: 0.5px solid #d5d5d5;
     border-radius: 5px;
-  }
+}
 
-  .woocommerce .products ul, .woocommerce ul.products {
-    width: 50%;
+
+.comments-area{
+    width: 100%;
+}
+.descrip-single{
+    width: 62%;
+}
+.summary-2{
+    padding: 10px;
+    border: 0.5px solid #d5d5d5;
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 6%;
+    margin-bottom: 30px;
+}
+.summary .price .woocommerce-Price-amount{
+    font-weight: 300;
+    font-size: 36px;
+    color: #000;
+}
+.woocommerce div.product form.cart .button {
+    background-color: #3483FA;
+}
+.mini-h3{
+    color: rgba(0,0,0,.9);
+    font-size: 18px;
+    font-weight: 400;
 }
 /*single producto jaj*/
 
